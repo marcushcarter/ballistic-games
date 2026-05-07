@@ -2,6 +2,10 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
         const id = link.getAttribute('href');
+        if (id === '#') {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            return;
+        }
         const target = document.querySelector(id);
         if (target) {
             target.scrollIntoView({ behavior: 'smooth' });
@@ -34,3 +38,30 @@ window.addEventListener('scroll', () => {
     }
     lastScroll = currentScroll;
 });
+
+const navbarImg = document.querySelector('.navbar__btn img');
+const navbarBtns = document.querySelectorAll('.navbar__btn');
+const darkSections = document.querySelectorAll('.banner, .footer, .full-width-image');
+
+function updateNavbar() {
+    const navbarMid = 60;
+    let isDark = false;
+
+    darkSections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= navbarMid && rect.bottom >= navbarMid) {
+            isDark = true;
+        }
+    });
+
+    if (isDark) {
+        navbarImg.src = '/public/branding/favicon_white.png';
+        navbarBtns.forEach(btn => btn.style.color = '#fff');
+    } else {
+        navbarImg.src = '/public/branding/favicon_black.png';
+        navbarBtns.forEach(btn => btn.style.color = '#000');
+    }
+}
+
+window.addEventListener('scroll', updateNavbar);
+updateNavbar();
