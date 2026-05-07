@@ -89,6 +89,40 @@ html, body {
 }
 
 /* =====================
+   NAVBAR
+   ===================== */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    z-index: 100;
+    transition: transform 0.3s ease;
+}
+
+.navbar.hidden {
+    transform: translateY(-100%);
+}
+
+.navbar__btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navbar__btn img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+/* =====================
    BANNER
    ===================== */
 
@@ -136,6 +170,128 @@ html, body {
     height: 100vh;
     object-fit: cover;
     object-position: center;
+}
+
+/* =====================
+   FOOTER
+   ===================== */
+
+.footer {
+    background: #0a0a0a;
+    padding: 2.5rem 3rem;
+    border-top: 1px solid #1e1e1e;
+    margin-top: 4rem;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.footer__nav {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__nav a {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer__nav a:hover {
+    color: #fff;
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer__social-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #555;
+    margin-right: 0.25rem;
+}
+
+.footer__social a {
+    color: #aaa;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer__social a:hover {
+    color: #fff;
+}
+
+.footer__bottom {
+    border-top: 1px solid #1e1e1e;
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer__left {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.footer__copy {
+    font-size: 0.7rem;
+    color: #555;
+    letter-spacing: 0.05em;
+}
+
+.footer__support {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #555;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer__support:hover {
+    color: #aaa;
+}
+
+.footer__legal {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__legal a {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #555;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer__legal a:hover {
+    color: #aaa;
 }
 
 /* =====================

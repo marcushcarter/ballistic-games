@@ -22,6 +22,7 @@
     <meta name="twitter:image" content="https://ballisticgames.ca/public/branding/banner.png">
 
     <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
     <link rel="icon" type="image/png" href="public/branding/favicon.png">
     <link rel="canonical" href="https://ballisticgames.ca">
 </head>
@@ -40,16 +41,29 @@
 }
 </script>
 <body>
+    <nav class="navbar">
+        <button class="navbar__btn">
+            <!-- <img src="/public/branding/favicon.png" alt="Ballistic Games"> -->
+            <img src="/public/branding/favicon_black.png" alt="Ballistic Games">
+        </button>
+        <button class="navbar__btn">☰</button>
+    </nav>
+    
     <main>
 
         <div class="banner">
             <div class="banner__bg">
-                <!-- <img src="/public/images/R.jpg" alt="Banner background"> -->
                 <video src="/public/videos/6725a659efdb087a7a6de15e_67b65d2de825d4de36a6492b_AnnounceTrailer_website_full2-transcode.mp4" muted loop playsinline class="lazy-video"></video>
             </div>
             <img src="/public/images/6725af97709ec03518be9a67_WANDERER-LOGO-01-DARK-BG 1.avif" class="banner__logo fade__up" alt="Logo">
             <a href="#latest" class="banner__cta fade__up" data-delay="150">Learn More</a>
-        </div>        
+        </div>
+
+        <!-- <div class="banner">
+            <div class="banner__bg" style="background: #000;"></div>
+            <img src="/public/branding/logo.png" class="banner__logo fade__up" alt="Logo">
+            <a href="#latest" class="banner__cta fade__up" data-delay="150">Learn More</a>
+        </div> -->
 
         <div class="latest" id="latest">
             <h2 class="title fade__up">OUR LATEST ADVENTURE</h2>
@@ -66,14 +80,14 @@
                 </a>
                 <a href="https://store.steampowered.com/app/..." class="card-row__item fade__up" data-delay="300">
                     <img src="public/images/card3.avif" alt="Game 3">
-                    <span>Game 3</span>
+                    <span>Wishlist On Steam</span>
                 </a>
             </div>
         </div>
         
         <div class="team" id="team">
             <h2 class="title fade__up">JOIN OUR TEAM</h2>
-            <p class="subtitle fade__up" data-delay="150">We’re always looking for people who share our drive to make great experiences for players. We celebrate self-starters who care about the details. Check out our open positions below!</p>
+            <p class="subtitle fade__up" data-delay="150">We're always lookign for new people who have the same mindset to join the team. See where your skills could fit into our passionate group of individuals looking to create incredible experiences for our players and customers.</p>
             <a href="#" class="btn fade__up" data-delay="150">See Open Positions</a>
         </div>
 
@@ -82,6 +96,7 @@
         <div class="games" id="games">
             <h2 class="title fade__up">Our Games</h2>
             <p class="subtitle fade__up" data-delay="150">Sucker Punch Productions began in 1997 with a mission to make great games, and we strive to spend every year doing just that. We’re excited to keep sharing our passion for building beautiful, thrilling, compelling experiences for many more years to come.</p>
+            <p class="subtitle fade__up" data-delay="150">Ballistic Games began in 2024 with the goal to create incredible optimized games and we aim to spend every second we can doing just that. We're excited to keep sharing our projects for everyone to enjoy, not only the ones with the expensive computers.  </p>
 
             <div class="gallery">
                 <div class="gallery__item fade__up"><img src="public/images/yotie.avif" alt=""></div>
@@ -110,15 +125,32 @@
     </main>
 
     <footer class="footer">
-        <a href="https://www.instagram.com/playballistic" class="subtitle fade__up" data-delay="150">Instagram</a>
-        <a href="https://www.tiktok.com/@playballistic" class="subtitle fade__up" data-delay="150">TikTok</a>
-        <a href="https://www.youtube.com/@playballisticgames" class="subtitle fade__up" data-delay="150">YouTube</a>
-        <a href="https://discord.com/channels/@playballistic" class="subtitle fade__up" data-delay="150">Discord</a>
-
-        <p>©2026 Ballistic Games</p>
-
-        <a>PRIVACY POLICY</a>
-        <a>TERMS OF SERVICE</a>
+        <div class="footer__top">
+            <nav>
+                <ul class="footer__nav">
+                    <li><a href="#latest">Latest</a></li>
+                    <li><a href="#team">Join Our Team</a></li>
+                    <li><a href="#games">Our Games</a></li>
+                </ul>
+            </nav>
+            <div class="footer__social">
+                <span class="footer__social-label">Follow</span>
+                <a href="https://www.instagram.com/playballistic" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
+                <a href="https://www.tiktok.com/@playballistic" aria-label="TikTok"><i class="ti ti-brand-tiktok"></i></a>
+                <a href="https://www.youtube.com/@playballisticgames" aria-label="YouTube"><i class="ti ti-brand-youtube"></i></a>
+                <a href="https://discord.com/channels/@playballistic" aria-label="Discord"><i class="ti ti-brand-discord"></i></a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__left">
+                <p class="footer__copy">©2026 Ballistic Games LLC.</p>
+                <a href="mailto:marcuscarter@ballisticgames.ca" class="footer__support">Support</a>
+            </div>
+            <ul class="footer__legal">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
     </footer>
 
     <script src="/src/scripts/observer.js"></script>
