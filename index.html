@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ballistic Games</title>
+
+    <!-- <meta name="description" content="Ballistic Games is an indie game studio crafting immersive worlds and unforgettable experiences. Follow us for our latest releases and updates."> -->
+    <meta name="keywords" content="ballistic games, indie game studio, video games, game developer, websites">
+    <meta name="author" content="Ballistic Games">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Ballistic Games">
+    <!-- <meta property="og:description" content="Ballistic Games is an indie game studio crafting immersive worlds and unforgettable experiences."> -->
+    <meta property="og:image" content="https://ballisticgames.ca/public/branding/og-image.png">
+    <meta property="og:url" content="https://ballisticgames.ca">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ballistic Games">
+    <!-- <meta name="twitter:description" content="Ballistic Games is an indie game studio crafting immersive worlds and unforgettable experiences."> -->
+    <meta name="twitter:image" content="https://ballisticgames.ca/public/branding/og-image.png">
+
     <link rel="stylesheet" href="src/styles/main.css">
-    <link rel="icon" type="image/png" href="public/images/favicon.png">
+    <link rel="icon" type="image/png" href="public/branding/favicon.png">
+    <link rel="canonical" href="https://ballisticgames.ca">
 </head>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Ballistic Games",
+    "url": "https://ballisticgames.ca",
+    "logo": "https://ballisticgames.ca/public/branding/favicon.png",
+    "sameAs": [
+        "https://www.instagram.com/playballistic",
+        "https://www.tiktok.com/@playballistic",
+        "https://www.youtube.com/@playballisticgames"
+    ]
+}
+</script>
 <body>
     <main>
 
@@ -15,68 +47,80 @@
                 <!-- <img src="/public/images/R.jpg" alt="Banner background"> -->
                 <video src="/public/videos/6725a659efdb087a7a6de15e_67b65d2de825d4de36a6492b_AnnounceTrailer_website_full2-transcode.mp4" muted loop playsinline class="lazy-video"></video>
             </div>
-            <!-- <img src="/public/images/6725af97709ec03518be9a67_WANDERER-LOGO-01-DARK-BG 1.avif" class="fade__up" alt="Banner background"> -->
-            <a href="#latest" class="subtitle fade__up">Learn More</a>
-        </div>
-
-
-
-        <!-- <div>
-            <h1>JOIN THE TEAM</h1>
-            <p>We’re always looking for people who share our drive to make great experiences for players. We celebrate self-starters who care about the details. Check out our open positions below!</p>
-            <a>See Open Positions</a>
-        </div> -->
-        
+            <img src="/public/images/6725af97709ec03518be9a67_WANDERER-LOGO-01-DARK-BG 1.avif" class="banner__logo fade__up" alt="Logo">
+            <a href="#latest" class="banner__cta fade__up" data-delay="150">Learn More</a>
+        </div>        
 
         <div class="latest" id="latest">
             <h2 class="title fade__up">OUR LATEST ADVENTURE</h2>
-            <p class="subtitle fade__up">At the northern edge of Japan, a new warrior rises. In 1603, Atsu sets out on a journey in the lands surrounding Mount Yōtei, an area filled with sprawling grasslands, snowy tundras, and unexpected dangers.</p>
+            <p class="subtitle fade__up" data-delay="150">At the northern edge of Japan, a new warrior rises. In 1603, Atsu sets out on a journey in the lands surrounding Mount Yōtei, an area filled with sprawling grasslands, snowy tundras, and unexpected dangers.</p>
+
+            <div class="card-row">
+                <a href="https://store.steampowered.com/app/..." class="card-row__item fade__up">
+                    <img src="public/images/card1.avif" alt="Game 1">
+                    <span>Game 1</span>
+                </a>
+                <a href="https://store.steampowered.com/app/..." class="card-row__item fade__up" data-delay="150">
+                    <img src="public/images/card2.avif" alt="Game 2">
+                    <span>Game 2</span>
+                </a>
+                <a href="https://store.steampowered.com/app/..." class="card-row__item fade__up" data-delay="300">
+                    <img src="public/images/card3.avif" alt="Game 3">
+                    <span>Game 3</span>
+                </a>
+            </div>
         </div>
         
-        <div class="join-team" id="join-team">
+        <div class="team" id="team">
             <h2 class="title fade__up">JOIN OUR TEAM</h2>
-            <p class="subtitle fade__up">We’re always looking for people who share our drive to make great experiences for players. We celebrate self-starters who care about the details. Check out our open positions below!</p>
-            <a href="#" class="subtitle fade__up">See Open Positions</a>
+            <p class="subtitle fade__up" data-delay="150">We’re always looking for people who share our drive to make great experiences for players. We celebrate self-starters who care about the details. Check out our open positions below!</p>
+            <a href="#" class="btn fade__up" data-delay="150">See Open Positions</a>
         </div>
 
-        <div class="games">
+        <img src="public/images/people.avif" class="full-width-image" alt="">
+
+        <div class="games" id="games">
             <h2 class="title fade__up">Our Games</h2>
-            <p class="subtitle fade__up">Sucker Punch Productions began in 1997 with a mission to make great games, and we strive to spend every year doing just that. We’re excited to keep sharing our passion for building beautiful, thrilling, compelling experiences for many more years to come.</p>
+            <p class="subtitle fade__up" data-delay="150">Sucker Punch Productions began in 1997 with a mission to make great games, and we strive to spend every year doing just that. We’re excited to keep sharing our passion for building beautiful, thrilling, compelling experiences for many more years to come.</p>
 
             <div class="gallery">
                 <div class="gallery__item fade__up"><img src="public/images/yotie.avif" alt=""></div>
-                <div class="gallery__item fade__up"><img src="public/images/tsushima.avif" alt=""></div>
+                <div class="gallery__item fade__up" data-delay="50"><img src="public/images/tsushima.avif" alt=""></div>
             </div>
             
             <div class="gallery">
-                <div class="gallery__item fade__up"><img src="public/images/inf.avif" alt=""></div>
-                <div class="gallery__item fade__up"><img src="public/images/inf2.avif" alt=""></div>
-                <div class="gallery__item fade__up"><img src="public/images/inf3.avif" alt=""></div>
+                <div class="gallery__item fade__up" data-delay="50"><img src="public/images/inf.avif" alt=""></div>
+                <div class="gallery__item fade__up" data-delay="100"><img src="public/images/inf2.avif" alt=""></div>
+                <div class="gallery__item fade__up" data-delay="150"><img src="public/images/inf3.avif" alt=""></div>
             </div>
             
             <div class="gallery">
-                <div class="gallery__item fade__up"><img src="public/images/skycoop.avif" alt=""></div>
-                <div class="gallery__item fade__up"><img src="public/images/sly2.avif" alt=""></div>
-                <div class="gallery__item fade__up"><img src="public/images/sly3.avif" alt=""></div>
+                <div class="gallery__item fade__up" data-delay="150"><img src="public/images/skycoop.avif" alt=""></div>
+                <div class="gallery__item fade__up" data-delay="200"><img src="public/images/sly2.avif" alt=""></div>
+                <div class="gallery__item fade__up" data-delay="250"><img src="public/images/sly3.avif" alt=""></div>
             </div>
             
             <div class="gallery">
-                <div class="gallery__item fade__up"><img src="public/images/rocket.avif" alt=""></div>
+                <div class="gallery__item fade__up" data-delay="250"><img src="public/images/rocket.avif" alt=""></div>
             </div>
             
-            <a href="#" class="subtitle fade__up">View On Steam</a>
+            <a href="#" class="btn fade__up" data-delay="300">View On Steam</a>
         </div>
 
     </main>
 
     <footer class="footer">
-        <a href="https://www.instagram.com/playballistic">Instagram</a>
-        <a href="https://www.tiktok.com/@playballistic">TikTok</a>
-        <a href="https://www.youtube.com/@playballisticgames">YouTube</a>
-        <a href="https://discord.com/channels/@playballistic">Discord</a>
+        <a href="https://www.instagram.com/playballistic" class="subtitle fade__up" data-delay="150">Instagram</a>
+        <a href="https://www.tiktok.com/@playballistic" class="subtitle fade__up" data-delay="150">TikTok</a>
+        <a href="https://www.youtube.com/@playballisticgames" class="subtitle fade__up" data-delay="150">YouTube</a>
+        <a href="https://discord.com/channels/@playballistic" class="subtitle fade__up" data-delay="150">Discord</a>
+
+        <p>©2026 Ballistic Games</p>
+
+        <a>PRIVACY POLICY</a>
+        <a>TERMS OF SERVICE</a>
     </footer>
 
-    <script src="/src/scripts/loader.js"></script>
     <script src="/src/scripts/observer.js"></script>
     <script src="/src/scripts/video.js"></script>
 </body>
