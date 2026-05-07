@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.banner__bg img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.banner__content {
+    animation: fadeUp 1s ease forwards;
+}
+
+
+
+
+
+
+
+.latest {
+    height: 100vh;
+}
+
+.join-team {
+    height: 100vh;
+}
+
+.games {
+    height: 100vh;
+}
+
+
+
+
+
+.games {
+    background-image: url('../../public/images/banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.gallery__item {
+    width: 25%;  /* controls how wide each image is */
+    /* aspect-ratio: 16 / 9;  controls the shape */
+}
+
+.gallery__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
