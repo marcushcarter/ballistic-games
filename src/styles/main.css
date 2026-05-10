@@ -10,11 +10,18 @@
 
 html, body {
     scroll-behavior: smooth;
+    background: whitesmoke;
 }
 
 /* =====================
    ANIMATIONS
    ===================== */
+
+@keyframes slideDown {
+    to {
+        transform: translateY(0);
+    }
+}
 
 @keyframes fadeUp {
     from {
@@ -118,7 +125,6 @@ td {
     padding: 0.75rem 1rem;
     font-size: 0.75rem;
     letter-spacing: 0.1em;
-    text-transform: uppercase;
     color: #000;
     border-bottom: 1px solid #e0e0e0;
 }
@@ -162,12 +168,6 @@ tbody tr:hover td {
     animation: slideDown 0.6s ease 0.5s forwards;
 }
 
-@keyframes slideDown {
-    to {
-        transform: translateY(0);
-    }
-}
-
 /* =====================
    NAVBAR
    ===================== */
@@ -181,7 +181,7 @@ tbody tr:hover td {
     justify-content: space-between;
     padding: 1.5rem 2rem;
     transition: transform 0.3s ease;
-    mix-blend-mode: difference;
+    /* mix-blend-mode: difference; */
     z-index: 1000;
 }
 

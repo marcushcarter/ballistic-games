@@ -1,5 +1,4 @@
 const banner = document.querySelector('.sale-banner');
-
 setTimeout(() => {
     banner.style.animation = 'none';
     banner.style.transform = 'translateY(0)';

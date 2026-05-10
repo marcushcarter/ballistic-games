@@ -41,14 +41,9 @@
 }
 </script>
 <body>
-    <nav class="navbar">
-        <a href="#" class="navbar__btn">
-            <img src="public/branding/favicon_white.png" alt="Ballistic Games">
-        </a>
-        <!-- <button class="navbar__btn" href="#">☰</button> -->
-    </nav>
-    
     <div class="sale-banner">🎉 Studio Launch — All websites are 25% off for a limited time</div>
+    
+    <div id="navbar"></div>
     
     <main>
 
@@ -91,7 +86,7 @@
         <div class="team" id="team">
             <h2 class="title fade__up">Join Our Team</h2>
             <p class="subtitle fade__up" data-delay="150">We're always looking for new people who have the same mindset to join the team. See where your skills could fit into our passionate group of individuals looking to create incredible experiences for our players and customers.</p>
-            <a href="#" class="btn fade__up" data-delay="150">See Open Positions</a>
+            <a href="jobs" class="btn fade__up" data-delay="150">See Open Positions</a>
         </div>
 
         <div class="full-width-image"><img src="public/images/people.avif" alt=""></div>
@@ -211,35 +206,9 @@
 
     </main>
 
-    <footer class="footer">
-        <div class="footer__top">
-            <nav>
-                <ul class="footer__nav">
-                    <li><a href="#latest">Latest</a></li>
-                    <li><a href="#team">Join Our Team</a></li>
-                    <li><a href="#games">Our Games</a></li>
-                </ul>
-            </nav>
-            <div class="footer__social">
-                <span class="footer__social-label">Follow</span>
-                <a href="https://www.instagram.com/playballistic" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
-                <a href="https://www.tiktok.com/@playballistic" aria-label="TikTok"><i class="ti ti-brand-tiktok"></i></a>
-                <a href="https://www.youtube.com/@playballisticgames" aria-label="YouTube"><i class="ti ti-brand-youtube"></i></a>
-                <a href="https://discord.com/channels/@playballistic" aria-label="Discord"><i class="ti ti-brand-discord"></i></a>
-            </div>
-        </div>
-        <div class="footer__bottom">
-            <div class="footer__left">
-                <p class="footer__copy">©2026 Ballistic Games LLC.</p>
-                <a href="mailto:marcuscarter@ballisticgames.ca" class="footer__support">Support</a>
-            </div>
-            <ul class="footer__legal">
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-            </ul>
-        </div>
-    </footer>
+    <div id="footer"></div>
 
+    <script src="/src/scripts/loader.js"></script>
     <script src="/src/scripts/observer.js"></script>
     <script src="/src/scripts/video.js"></script>
     <script src="/src/scripts/banner.js"></script>
