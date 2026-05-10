@@ -51,9 +51,10 @@ html, body {
     font-weight: 500;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: tomato;
+    color: #6b2fa0;
     text-align: center;
     padding: 1rem 2rem;
+    /* -webkit-text-stroke: 1px black; */
 }
 
 .subtitle {
@@ -65,6 +66,13 @@ html, body {
     margin: 0 auto;
     line-height: 1.7;
     padding: 1rem 2rem;
+}
+
+.latest .subtitle,
+.latest .btn,
+.games .subtitle,
+.games .btn {
+    filter: invert(1);
 }
 
 .full-width-image {
@@ -82,8 +90,7 @@ html, body {
 .btn {
     display: block;
     width: fit-content;
-    margin: 0 auto;
-    margin: 1rem auto 0;
+    margin: 2rem auto 0;
     padding: 0.85rem 2.5rem;
     border: 1px solid #000;
     color: #000;
@@ -98,6 +105,16 @@ html, body {
 .btn:hover {
     background: #000;
     color: #fff;
+}
+
+.btn--inverse {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn--inverse:hover {
+    background: #fff;
+    color: #000;
 }
 
 table {
@@ -118,7 +135,7 @@ th {
     font-weight: 500;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: tomato;
+    color: #6b2fa0;
 }
 
 td {
@@ -145,6 +162,11 @@ tbody tr:hover td {
 .price-sale {
     color: black;
     font-weight: 500;
+}
+
+.latest, .team, .websites, .games {
+    padding: 2rem;
+    /* padding: 4rem 2rem; */
 }
 
 /* =====================
@@ -261,7 +283,7 @@ tbody tr:hover td {
     background: #0a0a0a;
     padding: 2.5rem 3rem;
     border-top: 1px solid #1e1e1e;
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
 }
 
 .footer__top {
@@ -430,7 +452,7 @@ tbody tr:hover td {
     font-size: 0.75rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: black;
+    color: white;
     text-align: center;
     border-bottom: 1px solid transparent;
     transition: border-bottom-color 0.2s;
