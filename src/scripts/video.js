@@ -4,7 +4,7 @@ const videoObserver = new IntersectionObserver((entries) => {
             const video = entry.target;
             setTimeout(() => {
                 video.play();
-            }, 5000);
+            }, 0);
             videoObserver.unobserve(video);
         }
     });

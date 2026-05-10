@@ -93,6 +93,81 @@ html, body {
     color: #fff;
 }
 
+table {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    border-collapse: collapse;
+}
+
+thead tr {
+    border-bottom: 1px solid #000;
+}
+
+th {
+    text-align: left;
+    padding: 0.75rem 1rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: tomato;
+}
+
+td {
+    padding: 0.75rem 1rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover td {
+    background: #f9f9f9;
+}
+
+.price-original {
+    text-decoration: line-through;
+    color: tomato;
+}
+
+.price-sale {
+    color: black;
+    font-weight: 500;
+}
+
+/* =====================
+   BANNER
+   ===================== */
+
+.sale-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: tomato;
+    color: #fff;
+    text-align: center;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    z-index: 1001;
+    transform: translateY(-100%);
+    animation: slideDown 0.6s ease 0.5s forwards;
+}
+
+@keyframes slideDown {
+    to {
+        transform: translateY(0);
+    }
+}
+
 /* =====================
    NAVBAR
    ===================== */
